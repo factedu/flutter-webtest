@@ -1,6 +1,6 @@
-# webtest
+# EDQUB
 
-A new Flutter project.
+Startup name generator
 
 ## Getting Started
 
