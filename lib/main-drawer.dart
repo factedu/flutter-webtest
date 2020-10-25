@@ -1,4 +1,6 @@
+import 'package:edqub/screens/contacts.dart';
 import 'package:flutter/material.dart';
+import './name-generator.dart';
 
 class MainDrawer extends StatelessWidget {
   @override
@@ -33,6 +35,36 @@ class MainDrawer extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+          ListTile(
+            leading: Icon(Icons.local_fire_department),
+            title: Text(
+              'Startup Name Generator',
+              style: TextStyle(fontSize: 16),
+            ),
+            onTap: (){
+              Navigator.of(context).pop();
+              Navigator.pushReplacement(context, MaterialPageRoute(
+                builder: (_){
+                  return RandomWords();
+                }
+              ));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.contact_phone),
+            title: Text(
+              'Contacts',
+              style: TextStyle(fontSize: 16),
+            ),
+            onTap: (){
+              Navigator.of(context).pop();
+              Navigator.pushReplacement(context, MaterialPageRoute(
+                builder: (_){
+                  return Contacts();
+                }
+              ));
+            },
           ),
         ],
       ),

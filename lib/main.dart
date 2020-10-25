@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
       title: 'Startup Name Generator',
       theme: ThemeData(
         primaryColor: Colors.purple,
+        accentColor: Colors.red,
       ),
       home: SplashScreen(),
     );
