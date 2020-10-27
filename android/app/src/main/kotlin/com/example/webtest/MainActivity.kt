@@ -1,4 +1,4 @@
-package com.example.webtest
+package com.factedu.edqub
 
 import io.flutter.embedding.android.FlutterActivity
 
